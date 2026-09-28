@@ -1,8 +1,14 @@
 import logging
 
+#basic configuarion mandatory
 logging.basicConfig(
+    #set level as 1st logging level
     level=logging.INFO ,
-    filename="app.log"
+    # by putting a file name all logs are recorded in a file instead of terminal
+    filename="app.log" ,
+    # to print the time of log created use:
+    format="%(asctime)s - %(levelname)s - %(message)s"
+
     )
 
 username = "sumanth"
